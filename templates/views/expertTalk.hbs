@@ -1,0 +1,31 @@
+{{>header}}
+<h3>EXPERT TALKS</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form id="ExpertTalksFields" action="/expertTalk" method="POST">
+    <table>
+          <tr>
+            <td><label>Theme of Expert Talk*:</label></td>
+            <td><input type="text" name="theme"></td>
+          </tr>
+          <tr>
+            <td><label>From Date*:</label></td>
+            <td><input type="date" name="fromDate"></td>
+            <td><label>To Date:</label></td>
+            <td><input type="date" name="toDate"></td>
+          </tr>
+          <tr>
+            <td><label>Organized By*: </label></td>
+            <td><input type = "text" name="organizer"></td>
+          </tr>
+          <tr>
+            <td><label>Name of Coordinator/s *: </label></td>
+            <td><input type = "text" name="coordinator"> </td>
+          </tr>
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+  
+
+{{>footer}}

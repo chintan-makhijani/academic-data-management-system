@@ -1,0 +1,27 @@
+{{>header}}
+<h3>PAPER REVIEWERS</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form action="/paperReviewer" method="POST">
+    <table>
+          <tr>
+            <td><label>Name of Faculty*: </label></td>
+            <td><input type = "text" name="facultyName" /></td>
+          </tr>
+          <tr>
+            <td><label>Department*: </label></td>
+            <td><input type = "text" name="department"/></td>
+          </tr>
+          <tr>
+            <td><label>Name of Journal/Conference*: </label></td>
+            <td><input type = "text" name="journalName"/></td>
+          </tr>
+          <tr>
+            <td><label>Number of Papers Reviewed*: </label></td>
+            <td><input type = "number" name="numberOfPapers"/></td>
+          </tr>
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+{{>footer}}

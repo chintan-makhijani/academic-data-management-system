@@ -1,0 +1,25 @@
+{{>header}}
+<h3>INVITED TALKS</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form action="/invitedTalk" method="POST">
+    <table>
+          <tr>
+            <td><label>Name of the capacity development and skills enhancement schemes*:</label></td>
+            <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <td><label>Name of the agencies/consultants involved*:</label></td>
+            <td><input type="text" name="agencies"></td>
+          </tr>
+          <tr>
+            <td><label>Date*:</label></td>
+            <td><input type="date" name="date"></td>
+          </tr>
+
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+  <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+
+{{>footer}}

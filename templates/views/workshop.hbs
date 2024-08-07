@@ -1,0 +1,30 @@
+{{>header}}
+<h3>WORKSHOPS/SEMINARS</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form action="/workshop" method="POST">
+    <table>
+          <tr>
+            <td><label>Name of the workshop*:</label></td>
+            <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <td><label>Name of Coordinator/s *: </label></td>
+            <td><input type = "text" name="coordinator"> </td>
+          </tr>
+          <tr>
+            <td><label>Department/Cell*: </label></td>
+            <td><input type = "text" name="department"></td>
+          </tr>
+          <tr>
+            <td><label>From Date*:</label></td>
+            <td><input type="date" name="fromDate"></td>
+            <td><label>To Date:</label></td>
+            <td><input type="date" name="toDate"></td>
+          </tr>
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+
+{{>footer}}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LNMIIT</title>
+    <link rel="stylesheet" href="css/style.css">
+    {{!-- <link rel="icon" href="favicon_io/favicon.png"> --}}
+    <style>
+
+            p {
+            position: relative;
+            }
+
+            a,
+            a:link,
+            a:visited,
+            a:active {
+            color: #3ca9e2;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            }
+            a:focus, a:hover,
+            a:link:focus,
+            a:link:hover,
+            a:visited:focus,
+            a:visited:hover,
+            a:active:focus,
+            a:active:hover {
+            color: #329dd5;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            }
+
+            #login-form-wrap {
+            background-color: #fff;
+            width: 35%;
+            margin: 30px auto;
+            text-align: center;
+            padding: 20px 0 30px 0;
+            border-radius: 4px;
+            box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            #login-form {
+            padding: 0 60px;
+            }
+
+            input {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            outline: none;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 4px;
+            }
+
+            input[type="password"],
+            input[type="email"] {
+            width: 100%;
+            padding: 0 0 0 10px;
+            margin: 0;
+            color: #8a8b8e;
+            border: 1px solid #c2c0ca;
+            font-style: normal;
+            font-size: 16px;
+            -webkit-appearance: none;
+                -moz-appearance: none;
+                    appearance: none;
+            position: relative;
+            display: inline-block;
+            background: none;
+            }
+            input[type="password"]:focus,
+            input[type="email"]:focus {
+            border-color: #3ca9e2;
+            }
+            input[type="password"]:focus:invalid,
+            input[type="email"]:focus:invalid {
+            color: #cc1e2b;
+            border-color: #cc1e2b;
+            }
+            input[type="password"]:valid ~ .validation,
+            input[type="email"]:valid ~ .validation {
+            display: block;
+            border-color: #0C0;
+            }
+            input[type="password"]:valid ~ .validation span,
+            input[type="email"]:valid ~ .validation span {
+            background: #0C0;
+            position: absolute;
+            border-radius: 6px;
+            }
+    </style>
+
+  </head>
+  <body>
+    <div class="headings">
+      <img class= "logo" src="images/LNMIIT.png" alt="lnmiit logo">
+      <h1>THE LNM INSTITUTE OF INFORMATION TECHNOLOGY</h1>
+      <h2>"EXCELLENCE OUR MOTTO DISCIPLINE OUR WAY"</h2>
+    </div>
+<div id="login-form-wrap">
+  <h2>Login</h2>
+  <form id="login-form" action="/login" method="POST">
+    <p>
+    <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="password" id="password" name="password" placeholder="Password" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="submit" id="login" value="Login">
+    </p>
+  </form>
+  <div id="create-account-wrap">
+    <p>
+    <p>
+  </div><!--create-account-wrap-->
+</div><!--login-form-wrap-->
+
+{{>footer}}

@@ -1,0 +1,45 @@
+{{>header}}
+<h3>BOOK CHAPTER</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form id="bookChapterFields" action ="/bookChapter" method="POST">
+    <table>
+      <tr>
+        <td><label>Name of Author*:</label></td>
+        <td><input type="text" id="authorName" name="authorName"></td>
+      </tr>
+      <tr>
+        <td><label>Name of paper*:</label></td>
+        <td><input type="text" id="paper" name="paperName"></td>
+      </tr>
+      <tr>
+        <td><label>Name of Editor*:</label></td>
+        <td><input type="text" id="editor" onkeypress = "return onlyAlphabets(event,this);" name="editorName"></td>
+      </tr>
+      <tr>
+        <td><label>Name of Book*:</label></td>
+        <td><input type="text" id="book" name="bookName"></td>
+      </tr>
+      <tr>
+        <td><label>From Page No.*:</label></td>
+        <td><input type="number" id="fromPage" name="fromPage"></td>
+        <td><label>To Page No.*:</label></td>
+        <td><input type="number" id="toPage" name="toPage"></td>
+      </tr>
+      <tr>
+        <td><label>Name of Publication House*:</label></td>
+        <td><input type="text" id="publicationHouse" name="publicationHouse"></td>
+      </tr>
+      <tr>
+        <td><label>Year*:</label></td>
+        <td>
+        <select id='year' name="year">
+        </select>
+        </td>
+      </tr>
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+
+{{>footer}}

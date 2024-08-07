@@ -1,0 +1,26 @@
+{{>header}}
+<h3>ADMINISTRATIVE DEVELOPMENT PROGRAMMES</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form action="/adp" method="POST">
+    <table>
+          <tr>
+            <td><label>Title of the programme*:</label></td>
+            <td><input type="text" name="title"></td>
+          </tr>
+          <tr>
+            <td><label>Number of Participants*: </label></td>
+            <td><input type = "number" name="participantsNumber"></td>
+          </tr>
+          <tr>
+            <td><label>From Date*:</label></td>
+            <td><input type="date" name="fromDate"></td>
+            <td><label>To Date:</label></td>
+            <td><input type="date" name="toDate"></td>
+          </tr>
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+
+{{>footer}}

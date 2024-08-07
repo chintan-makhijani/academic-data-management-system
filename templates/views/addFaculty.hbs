@@ -1,0 +1,25 @@
+{{>header}}
+<h3>ADD FACULTY</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form action="/addFaculty" method="POST">
+    <table>
+          <tr>
+            <td><label>Email Address*:</label></td>
+            <td><input type="email" name="email"></td>
+          </tr>
+          <tr>
+            <td><label>Password*: </label></td>
+            <td><input type = "password" name="pass"/></td>
+          </tr>
+          <tr>
+            <td><label>Confirm Password*: </label></td>
+            <td><input type = "password" name="confirmPass"/></td>
+          </tr>
+
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goAdmin()" name="button">Home</button>
+  </form>
+
+{{>footer}}

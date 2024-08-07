@@ -1,0 +1,57 @@
+{{>header}}
+<h3>CONFERENCE</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form id="conferenceFields" action="/conference" method="POST">
+    <table>
+      <tr>
+        <td><label>Name of author*:</label></td>
+        <td><input type="text" id="authorName" name="authorName"></td>
+      </tr>
+      <tr>
+        <td><label>Name of paper*:</label></td>
+        <td><input type="text" id="paper" name="paperName"></td>
+      </tr>
+      <tr>
+        <td><label>Name of Conference*:</label></td>
+        <td><input type="text" id="conference" name="conferenceName"></td>
+      </tr>
+      <tr>
+        <td><label>Conference Abbreviation:</label></td>
+        <td><input type="text" id="conferenceAbbreviation" name="abbreviation"></td>
+      </tr>
+      <tr>
+        <td><label>Name of Publication House*:</label></td>
+        <td><input type="text" id="publicationHouse"></td>
+      </tr>
+      <tr>
+        <td>
+          Venue of Conference*:
+        </td>
+      </tr>
+      <tr>
+        <td><label>City*:</label></td>
+        <td><input type="text" id="city" name="city"></td>
+        <td><label>State:</label></td>
+        <td><input type="text" id="state" name="state"></td>
+        <td><label>Country*:</label></td>
+        <td><input type="text" id="country" name="country"></td>
+      </tr>
+      <tr>
+        <td><label>Year*:</label></td>
+        <td>
+          <select id='year' name="year">
+          </select>
+          </td>
+      </tr>
+      <tr>
+        <td><label>From Page No.*:</label></td>
+        <td><input type="number" id="fromPage" name="fromPage"></td>
+        <td><label>To Page No.*:</label></td>
+        <td><input type="number" id="toPage" name="toPage"></td>
+      </tr>
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+{{>footer}}

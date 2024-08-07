@@ -1,0 +1,31 @@
+{{>header}}
+<h3>FACULTY DEVELOPMENT PROGRAMMES</h3>
+  </div>
+  <h4>Please enter the following details:</h4>
+  <form action="/fdp" method="POST">
+    <table>
+          <tr>
+            <td><label>Title of the program*:</label></td>
+            <td><input type="text" name="title"></td>
+          </tr>
+          <tr>
+            <td><label>Name of attendee*: </label></td>
+            <td><input type = "text" name="attendeeName"/></td>
+          </tr>
+          <tr>
+            <td><label>Department*: </label></td>
+            <td><input type = "text" name="department"/></td>
+          </tr>
+          <tr>
+            <td><label>From Date*:</label></td>
+            <td><input type="date"></td>
+            <td><label>To Date:</label></td>
+            <td><input type="date"></td>
+          </tr>
+
+    </table>
+    <button class="submitButton" type="submit">Submit</button>
+    <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+  </form>
+
+{{>footer}}

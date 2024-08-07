@@ -1,0 +1,44 @@
+{{>header}}
+<h3>JOURNAL</h3>
+</div>
+<h4>Please enter the following details:</h4>
+<form id="publicationFields" action ="/publication" method="POST">
+  <table>
+    <tr>
+      <td><label>Name of Author*:</label></td>
+      <td><input type="text" name="authorName" id="authorName"></td>
+    </tr>
+    <tr>
+      <td><label>Name of paper*:</label></td>
+      <td><input type="text" name="paperName" id="paper"></td>
+    </tr>
+    <tr>
+      <td><label>Name of Journal*:</label></td>
+      <td><input type="text" name="journalName" id="journal"></td>
+    </tr>
+    <tr>
+      <td><label>Volume*:</label></td>
+      <td><input type="number" name="volume" id="volume"></td>
+      <td><label>Number:</label></td>
+      <td><input type="number" name="number" id="number"></td>
+    </tr>
+    <tr>
+      <td><label>From Page No.*:</label></td>
+      <td><input type="number" name="fromPage" id="fromPage"></td>
+      <td><label>To Page No.*:</label></td>
+      <td><input type="number" name="toPage" id="toPage"></td>
+    </tr>
+    <tr>
+      <td><label>Year*:</label></td>
+      <td>
+        <select name="year" id='year'>
+        </select>
+        </td>
+    </tr>
+  </table>
+  <button class="submitButton" type="submit">Submit</button>
+  <button class="homeButton" onclick="goToHome()" name="button">Home</button>
+</form>
+
+
+{{>footer}}

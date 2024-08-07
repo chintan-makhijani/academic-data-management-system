@@ -1,0 +1,27 @@
+{{>header}}
+<h3>REPORT GENERATION</h3>
+    <div class="buttons">
+      <table class="mainbuttons" align="center">
+        <tr>
+            <form action="/exportPublication" method="POST"><td class="homeTd"><button class="btn" type="submit">Export Publication</button></td></form>
+            <form action="/exportBookChapter" method="POST"><td class="homeTd"><button class="btn" type="submit">Export Book Chapter</button></td></form>
+            <form action="/exportConference" method="POST"><td class="homeTd"><button class="btn" type="submit">Export Conference</button></td></form>
+        </tr>
+        <tr>
+            <form action="/exportExpertTalk" method="POST"><td class="homeTd"><button class="btn" type="submit">Export Expert Talks</button></td></form>
+            <form action="/exportInvitedTalk" method="POST"><td class="homeTd"><button class="btn" type="submit">Export Invited Talks</button></td></form>
+            <form action="/exportWorkshop" method="POST"><td class="homeTd"><button class="btn" type="submit">Export Workshops/Seminars</button></td></form>
+        </tr>
+        <tr>
+            <form action="/exportFDP" method="POST"><td class="homeTd"><button class="btn" type="submit">Export FDPs</button></td></form>
+            <form action="/exportADP" method="POST"><td class="homeTd"><button class="btn" type="submit">Export ADPs</button></td></form>
+            <form action="/exportPaperReviewer" method="POST"><td class="homeTd"><button class="btn" type="submit">Export Paper Reviewers</button></td></form>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="homeTd"><button class="btn" onclick="goAdd()">Add Faculty</button></td>
+        </tr>
+      </table>
+    </div>
+
+{{>footer}}
